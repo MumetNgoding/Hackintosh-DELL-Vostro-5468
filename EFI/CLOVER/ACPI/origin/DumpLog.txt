@@ -1,0 +1,111 @@
+40:104  0:932  Found BIOS RSDP at eb550
+40:104  0:000  Printing ACPI tables from RSDP eb550 ...
+40:104  0:000   eb550: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+40:104  0:000    (Xsdt: 8a6a40c0, Rsdt: 8a6a4028)
+40:104  0:000    8a6a40c0: 'XSDT', 'CBX3', Rev: 1, Len: 252
+40:104  0:000    8a6a4028: 'RSDT', 'CBX3', Rev: 1, Len: 144
+40:104  0:000    Tables in Xsdt: 27
+40:104  0:000    0. 8a6c6798: 'FACP', 'CBX3', Rev: 5, Len: 268
+40:104  0:000        (Dsdt: 8A6A4248, Facs: 8AFF3F80, XDsdt: 8a6a4248, XFacs: 0)
+40:104  0:000        8a6a4248: 'DSDT', 'CBX3', Rev: 2, Len: 140617
+40:104  0:000        8aff3f80: 'FACS', Ver: 2, Len: 64
+40:104  0:000    1. 8a6c68a8: 'APIC', 'CBX3', Rev: 3, Len: 132
+40:104  0:000    2. 8a6c6930: 'FPDT', 'CBX3', Rev: 1, Len: 68
+40:104  0:000    3. 8a6c6978: 'FIDT', 'CBX3', Rev: 1, Len: 156
+40:104  0:000    4. 8a6c6a18: 'MCFG', 'CBX3', Rev: 1, Len: 60
+40:104  0:000    5. 8a6c6a58: 'HPET', 'CBX3', Rev: 1, Len: 56
+40:104  0:000    6. 8a6c6a90: 'SSDT', 'SataTabl', Rev: 1, Len: 1233
+40:104  0:000    7. 8a6c6f68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+40:104  0:000    8. 8a6c6f90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+40:104  0:000    9. 8a6c8278: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+40:104  0:000    10. 8a6c82b0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+40:104  0:000    11. 8a6c8968: 'UEFI', '', Rev: 1, Len: 66
+40:104  0:000    12. 8a6c89b0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+40:104  0:000    13. 8a6c9890: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+40:104  0:000    14. 8a6c9928: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+40:104  0:000    15. 8a6c9950: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+40:104  0:000    16. 8a6c9a98: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+40:104  0:000    17. 8a6c9d38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+40:104  0:000    18. 8a6ccd40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+40:104  0:000    19. 8a6ccf58: 'DBGP', '', Rev: 1, Len: 52
+40:104  0:000    20. 8a6ccf90: 'DBG2', '', Rev: 0, Len: 84
+40:104  0:000    21. 8a6ccfe8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+40:104  0:000    22. 8a6d2c10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+40:104  0:000    23. 8a6d2c68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+40:104  0:000    24. 8a6d2de0: 'DMAR', 'KBL', Rev: 1, Len: 240
+40:104  0:000    25. 8a6d2ed0: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+40:104  0:000    26. 8a6d2f08: 'BGRT', '', Rev: 0, Len: 56
+40:104  0:000  Found UEFI Acpi 2.0 RSDP at 8a6a4000
+40:104  0:000  Saving ACPI tables from RSDP 8a6a4000 to ACPI\origin ...
+40:104  0:000   8a6a4000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+40:104  0:000    (Xsdt: 8a6a40c0, Rsdt: 8a6a4028)
+40:104  0:000    8a6a40c0: 'XSDT', 'CBX3', Rev: 1, Len: 252
+40:104  0:000    8a6a4028: 'RSDT', 'CBX3', Rev: 1, Len: 144
+40:104  0:000    Tables in Xsdt: 27
+40:104  0:000    0. 8a6c6798: 'FACP', 'CBX3', Rev: 5, Len: 268
+40:104  0:000        (Dsdt: 8A6A4248, Facs: 8AFF3F80, XDsdt: 8a6a4248, XFacs: 0)
+40:104  0:000        8a6a4248: 'DSDT', 'CBX3', Rev: 2, Len: 140617
+40:104  0:000        8aff3f80: 'FACS', Ver: 2, Len: 64
+40:104  0:000    1. 8a6c68a8: 'APIC', 'CBX3', Rev: 3, Len: 132
+40:104  0:000    2. 8a6c6930: 'FPDT', 'CBX3', Rev: 1, Len: 68
+40:104  0:000    3. 8a6c6978: 'FIDT', 'CBX3', Rev: 1, Len: 156
+40:104  0:000    4. 8a6c6a18: 'MCFG', 'CBX3', Rev: 1, Len: 60
+40:104  0:000    5. 8a6c6a58: 'HPET', 'CBX3', Rev: 1, Len: 56
+40:104  0:000    6. 8a6c6a90: 'SSDT', 'SataTabl', Rev: 1, Len: 1233
+40:104  0:000    7. 8a6c6f68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+40:104  0:000    8. 8a6c6f90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+40:104  0:000    9. 8a6c8278: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+40:104  0:000    10. 8a6c82b0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+40:104  0:000    11. 8a6c8968: 'UEFI', '', Rev: 1, Len: 66
+40:104  0:000    12. 8a6c89b0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+40:104  0:000    13. 8a6c9890: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+40:104  0:000    14. 8a6c9928: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+40:104  0:000    15. 8a6c9950: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+40:104  0:000    16. 8a6c9a98: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+40:104  0:000    17. 8a6c9d38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+40:104  0:000    18. 8a6ccd40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+40:104  0:000    19. 8a6ccf58: 'DBGP', '', Rev: 1, Len: 52
+40:104  0:000    20. 8a6ccf90: 'DBG2', '', Rev: 0, Len: 84
+40:104  0:000    21. 8a6ccfe8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+40:104  0:000    22. 8a6d2c10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+40:104  0:000    23. 8a6d2c68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+40:104  0:000    24. 8a6d2de0: 'DMAR', 'KBL', Rev: 1, Len: 240
+40:104  0:000    25. 8a6d2ed0: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+40:104  0:000    26. 8a6d2f08: 'BGRT', '', Rev: 0, Len: 56
+40:104  0:000  Found UEFI Acpi 1.0 RSDP at 8a6a4000
+40:104  0:000  Printing ACPI tables from RSDP 8a6a4000 ...
+40:104  0:000   8a6a4000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+40:104  0:000    (Xsdt: 8a6a40c0, Rsdt: 8a6a4028)
+40:104  0:000    8a6a40c0: 'XSDT', 'CBX3', Rev: 1, Len: 252
+40:104  0:000    8a6a4028: 'RSDT', 'CBX3', Rev: 1, Len: 144
+40:104  0:000    Tables in Xsdt: 27
+40:104  0:000    0. 8a6c6798: 'FACP', 'CBX3', Rev: 5, Len: 268
+40:104  0:000        (Dsdt: 8A6A4248, Facs: 8AFF3F80, XDsdt: 8a6a4248, XFacs: 0)
+40:104  0:000        8a6a4248: 'DSDT', 'CBX3', Rev: 2, Len: 140617
+40:104  0:000        8aff3f80: 'FACS', Ver: 2, Len: 64
+40:104  0:000    1. 8a6c68a8: 'APIC', 'CBX3', Rev: 3, Len: 132
+40:104  0:000    2. 8a6c6930: 'FPDT', 'CBX3', Rev: 1, Len: 68
+40:104  0:000    3. 8a6c6978: 'FIDT', 'CBX3', Rev: 1, Len: 156
+40:104  0:000    4. 8a6c6a18: 'MCFG', 'CBX3', Rev: 1, Len: 60
+40:104  0:000    5. 8a6c6a58: 'HPET', 'CBX3', Rev: 1, Len: 56
+40:104  0:000    6. 8a6c6a90: 'SSDT', 'SataTabl', Rev: 1, Len: 1233
+40:104  0:000    7. 8a6c6f68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+40:104  0:000    8. 8a6c6f90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+40:104  0:000    9. 8a6c8278: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+40:104  0:000    10. 8a6c82b0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+40:104  0:000    11. 8a6c8968: 'UEFI', '', Rev: 1, Len: 66
+40:104  0:000    12. 8a6c89b0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+40:104  0:000    13. 8a6c9890: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+40:104  0:000    14. 8a6c9928: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+40:104  0:000    15. 8a6c9950: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+40:104  0:000    16. 8a6c9a98: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+40:104  0:000    17. 8a6c9d38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+40:104  0:000    18. 8a6ccd40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+40:104  0:000    19. 8a6ccf58: 'DBGP', '', Rev: 1, Len: 52
+40:104  0:000    20. 8a6ccf90: 'DBG2', '', Rev: 0, Len: 84
+40:104  0:000    21. 8a6ccfe8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+40:104  0:000    22. 8a6d2c10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+40:104  0:000    23. 8a6d2c68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+40:104  0:000    24. 8a6d2de0: 'DMAR', 'KBL', Rev: 1, Len: 240
+40:104  0:000    25. 8a6d2ed0: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+40:104  0:000    26. 8a6d2f08: 'BGRT', '', Rev: 0, Len: 56
