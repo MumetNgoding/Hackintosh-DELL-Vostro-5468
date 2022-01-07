@@ -139,6 +139,7 @@ macOS Monterey
 * CPUFriend.kext and CPUFriendDataProvider.kext: CPU power management data injection
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family 
+* USBMap.kext: For Mapping USB Port
 * VerbStub.kext: For Fix JackAudio with ComboJack
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooI2C.kext and VoodooI2CHID.kext: Enable I2C Trackpad
@@ -153,15 +154,13 @@ macOS Monterey
 
 * ALS0: Enable light sensor
 * EC-USBX: Fake embedded controller and fix USB power properties
-* GPRW: Fix instant wake
 * HPET: Fixing IRQ Conflicts
 * PLUG: to allow the kernel's XCPM CPU Power Management to manage our CPU's power management
 * PNLF: Fix brightness control
 * SMBUS-MCHC: Fixing SMBus support
-* UIAC-ALL: Fix USB Mapping Native without Kext/Injector
 * USB-Reset: Reset All Detected Ports and hit discover ports
 * XOSI: fixing I2C trackpads is enabling them within ACPI
-* [Now All SSDT* make to SSDT-HACK for make Simple]()
+* [Now All SSDT* make to SSDT-HFDZ for make Simple]()
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
 </details>
@@ -192,6 +191,7 @@ macOS Monterey
 ![20](Screenshot/20.png)
 ![21](Screenshot/21.png)
 ![22](Screenshot/22.png)
+![23](Screenshot/23.png)
 
 </details>
 
