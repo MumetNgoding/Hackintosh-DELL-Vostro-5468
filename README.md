@@ -59,7 +59,7 @@ macOS Monterey
 | Hibernation | ✅ Working |
 | Airdrop/Handoff | [-] Not Tested |
 | BootCamp | [-] Not Tested |
-| SD Card | ❌ Not working |
+| SD Card | ❌ [-] Not Tested |
 | Fingerprint reader | ❌ Not working |
 
 </details>
@@ -137,6 +137,7 @@ macOS Monterey
 * BlueToolFixup.kext: Enable Bluetooth
 * BrightnessKeys.kext: Mapping Brightness F11+F12 with Fn Keys
 * CPUFriend.kext and CPUFriendDataProvider.kext: CPU power management data injection
+* RealtekCardReader.kext: [Maybe fixed CardReader, because not tested now]()
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family 
 * USBMap.kext: For Mapping USB Port
@@ -192,6 +193,8 @@ macOS Monterey
 ![21](Screenshot/21.png)
 ![22](Screenshot/22.png)
 ![23](Screenshot/23.png)
+![24](Screenshot/24.png)
+![25](Screenshot/25.png)
 
 </details>
 
