@@ -100,9 +100,6 @@ macOS Monterey
 <details>
 <summary><strong>Other Configuration</strong></summary>
 
-### USB
-* Native without USBInjectAll or USBMap, i use SSDT-UIAC-ALL .
-
 ### Wireless, Bluetooth
 * The stock Intel AC 3165 can be worked well with [OpenIntelWireless](https://github.com/OpenIntelWireless).
 
@@ -135,7 +132,6 @@ macOS Monterey
 * AirportItlwm.kext: Intel AC 3165 Wirelless
 * AppleALC.kext: Enable Audio with layout-id=17
 * BlueToolFixup.kext: Enable Bluetooth
-* BrightnessKeys.kext: Mapping Brightness F11+F12 with Fn Keys
 * CPUFriend.kext and CPUFriendDataProvider.kext: CPU power management data injection
 * RealtekCardReader.kext: [Maybe fixed CardReader, because not tested now]()
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
@@ -161,6 +157,7 @@ macOS Monterey
 * SMBUS-MCHC: Fixing SMBus support
 * USB-Reset: Reset All Detected Ports and hit discover ports
 * XOSI: fixing I2C trackpads is enabling them within ACPI
+* BRT6: Fix Mapping Brightness Keys
 * [Now All SSDT* make to SSDT-HFDZ for make Simple]()
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
