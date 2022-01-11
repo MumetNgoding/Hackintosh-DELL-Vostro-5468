@@ -12,7 +12,7 @@ macOS Monterey
   - Monterey 12.0.1 ✅
 * Windows:
   - Windows 11 ✅
-* Bootloader: OpenCore 0.7.7.
+* Bootloader: OpenCore 0.7.8.
 * EFI can be used for both for installation and booting from SSD.
 
 ## Introduction
@@ -91,7 +91,7 @@ macOS Monterey
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 17`.
+* For ALC256 on this my Machine, I use `layout-id = 56`.
 * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
 * Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone. ( See on Branch ComboJack. )
 
@@ -107,7 +107,7 @@ macOS Monterey
 * Hibernation now is worked correctly with `hibernatemode = 3` and `SSDT-GPRW`.
 
 ### CPU Power Management
-* CPU power management is done by `CPUFriend.kext` while `CPUFriendDataProvider.kext` defines how it should be done. `CPUFriendDataProvider.kext` is generated for a specific CPU and power setting. You should follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html) to generate your own `CPUFriendDataProvider.kext`.
+* Native CPU Power Management
 
 </details>
 
@@ -130,16 +130,14 @@ macOS Monterey
 </br>
 
 * AirportItlwm.kext: Intel AC 3165 Wirelless
-* AppleALC.kext: Enable Audio with layout-id=17
+* AppleALC.kext: Enable Audio with layout-id=56
 * BlueToolFixup.kext: Enable Bluetooth
-* CPUFriend.kext and CPUFriendDataProvider.kext: CPU power management data injection
 * RealtekCardReader.kext: [Maybe fixed CardReader, because not tested now]()
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family 
 * USBMap.kext: For Mapping USB Port
 * VerbStub.kext: For Fix JackAudio with ComboJack
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
-* VoodooI2C.kext and VoodooI2CHID.kext: Enable I2C Trackpad
 * VoodooPS2Controller.kext: Enable Keyboard
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
 
@@ -152,12 +150,18 @@ macOS Monterey
 * ALS0: Enable light sensor
 * EC-USBX: Fake embedded controller and fix USB power properties
 * HPET: Fixing IRQ Conflicts
-* PLUG: to allow the kernel's XCPM CPU Power Management to manage our CPU's power management
 * PNLF: Fix brightness control
 * SMBUS-MCHC: Fixing SMBus support
 * USB-Reset: Reset All Detected Ports and hit discover ports
 * XOSI: fixing I2C trackpads is enabling them within ACPI
 * BRT6: Fix Mapping Brightness Keys
+* CPU-PM: For Native CPU Power Management
+* DMAC: Direct Memory Access Control
+* MEM2: Expanded Memory Option
+* PMCR: Power Management Capabilities Register
+* PWRB: Power Sleep Button
+* SLPB: Sleep Button Device
+* I2CI: For Fix Trackpad Native without KEXT
 * [Now All SSDT* make to SSDT-HFDZ for make Simple]()
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
@@ -192,6 +196,9 @@ macOS Monterey
 ![23](Screenshot/23.png)
 ![24](Screenshot/24.png)
 ![25](Screenshot/25.png)
+* [UPDATE]
+![26](Screenshot/26.png)
+![27](Screenshot/27.png)
 
 </details>
 
