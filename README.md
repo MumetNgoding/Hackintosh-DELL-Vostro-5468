@@ -104,7 +104,7 @@ macOS Monterey
 * The stock Intel AC 3165 can be worked well with [OpenIntelWireless](https://github.com/OpenIntelWireless).
 
 ### Sleep, Wake and Hibernation
-* Hibernation now is worked correctly with `hibernatemode = 3` and `SSDT-GPRW`.
+* Hibernation now is worked correctly with USBMap.Kext.
 
 ### CPU Power Management
 * Native CPU Power Management
