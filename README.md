@@ -105,6 +105,11 @@ macOS Monterey
 
 ### Sleep, Wake and Hibernation
 * Hibernation now is worked correctly with USBMap.Kext.
+* Config in Terminal :
+* - sudo pmset powernap 0
+* - sudo pmset proximitywake 0
+* - sudo pmset standby 0
+* - sudo pmset tcpkeepalive 0
 
 ### CPU Power Management
 * Native CPU Power Management
@@ -138,6 +143,7 @@ macOS Monterey
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * ThermalSolution.kext: driver for Signal Processing Controller for Intel(R) Xeon ( now IETM and B0D4 devices are correctly attached as reported by IORegistryExplorer ) 
 * USBMap.kext: For Mapping USB Port
+* VoodooI2C.kext: Fix Touchpad
 * VerbStub.kext: For Fix JackAudio with ComboJack
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard
@@ -163,7 +169,7 @@ macOS Monterey
 * PMCR: Power Management Capabilities Register
 * PWRB: Power Sleep Button
 * SLPB: Sleep Button Device
-* I2CI: For Fix Trackpad Native without KEXT
+* GPRW: For Fix Sleep/LID/Hibernate
 * [Now All SSDT* make to SSDT-HFDZ for make Simple]()
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
