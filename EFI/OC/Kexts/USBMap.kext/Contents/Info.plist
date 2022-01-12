@@ -43,7 +43,7 @@
 				<key>kUSBMuxEnabled</key>
 				<true/>
 				<key>port-count</key>
-				<data>CQAAAA==</data>
+				<data>DwAAAA==</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
@@ -67,6 +67,13 @@
 						<key>port</key>
 						<data>AwAAAA==</data>
 					</dict>
+					<key>HS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>BAAAAA==</data>
+					</dict>
 					<key>HS05</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -80,6 +87,13 @@
 						<integer>255</integer>
 						<key>port</key>
 						<data>BgAAAA==</data>
+					</dict>
+					<key>HS07</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>BwAAAA==</data>
 					</dict>
 					<key>HS08</key>
 					<dict>
@@ -97,24 +111,24 @@
 					</dict>
 					<key>SS01</key>
 					<dict>
-						<key>port</key>
-						<data>DQAAAA==</data>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>port</key>
+						<data>DQAAAA==</data>
 					</dict>
 					<key>SS02</key>
 					<dict>
-						<key>port</key>
-						<data>DgAAAA==</data>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>port</key>
+						<data>DgAAAA==</data>
 					</dict>
 					<key>SS03</key>
 					<dict>
-						<key>port</key>
-						<data>DwAAAA==</data>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>port</key>
+						<data>DwAAAA==</data>
 					</dict>
 				</dict>
 			</dict>
