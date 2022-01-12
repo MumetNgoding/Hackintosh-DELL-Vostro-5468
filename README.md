@@ -57,6 +57,7 @@ macOS Monterey
 | Webcam | ✅ Working |
 | Wi-Fi/Bluetooth | ✅ Working |
 | Hibernation | ✅ Working |
+| FileVault | ✅ Working |
 | Airdrop/Handoff | [-] Not Tested |
 | BootCamp | [-] Not Tested |
 | SD Card | ❌ [-] Not Tested |
@@ -104,12 +105,12 @@ macOS Monterey
 * The stock Intel AC 3165 can be worked well with [OpenIntelWireless](https://github.com/OpenIntelWireless).
 
 ### Sleep, Wake and Hibernation
-* Hibernation now is worked correctly with USBMap.Kext.
+* Hibernation now is works with GPRW Patch and support for native macOS `hibernatemode3`
 * Config in Terminal :
-* - sudo pmset powernap 0
-* - sudo pmset proximitywake 0
-* - sudo pmset standby 0
-* - sudo pmset tcpkeepalive 0
+ - `sudo pmset powernap 0`
+ - `sudo pmset proximitywake 0`
+ - `sudo pmset standby 0`
+ - `sudo pmset tcpkeepalive 0`
 
 ### CPU Power Management
 * Native CPU Power Management
@@ -170,7 +171,7 @@ macOS Monterey
 * PWRB: Power Sleep Button
 * SLPB: Sleep Button Device
 * GPRW: For Fix Sleep/LID/Hibernate
-* [Now All SSDT* make to SSDT-HFDZ for make Simple]()
+* `Now All SSDT* make to SSDT-HFDZ for make Simple`
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
 </details>
