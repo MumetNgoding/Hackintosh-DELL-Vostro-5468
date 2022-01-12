@@ -134,7 +134,9 @@ macOS Monterey
 * BlueToolFixup.kext: Enable Bluetooth
 * RealtekCardReader.kext: [Maybe fixed CardReader, because not tested now]()
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
-* RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family 
+* PropertyInjector.kext: Property Inject for Sunrise Thermal Subsystem
+* RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
+* ThermalSolution.kext: driver for Signal Processing Controller for Intel(R) Xeon ( now IETM and B0D4 devices are correctly attached as reported by IORegistryExplorer ) 
 * USBMap.kext: For Mapping USB Port
 * VerbStub.kext: For Fix JackAudio with ComboJack
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
@@ -199,6 +201,7 @@ macOS Monterey
 * [UPDATE]
 ![26](Screenshot/26.png)
 ![27](Screenshot/27.png)
+![28](Screenshot/28.png)
 
 </details>
 
