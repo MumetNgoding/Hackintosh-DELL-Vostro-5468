@@ -9,7 +9,7 @@ macOS Monterey
 </p>
 
 * macOS:
-  - Monterey 12.0.1 ✅
+  - Monterey 12.0.2 ✅
 * Windows:
   - Windows 11 ✅
 * Bootloader: OpenCore 0.7.8.
@@ -21,12 +21,12 @@ macOS Monterey
 <summary><strong>System Overview</strong></summary>
 </br>
 
-**Dell Vostro 5468**
+**Dell Vostro-14 5468**
 
 | Type | Item |
 | ---- | ---- |
 | CPU | Intel Core i3-7100U @ 2.40 GHz, 3M Cache |
-| RAM | Samsung 4GB DDR4-2133MHz |
+| RAM | Samsung 8GB DDR4-2133MHz |
 | SSD1 | Digital Alliance 128GB M.2 SATA III |
 | HDD2 | Western Digital WD5000LPCX 500GB SATA Hard Drive |
 | Sound | Realtek ALC256 |
@@ -111,6 +111,17 @@ macOS Monterey
  - `sudo pmset proximitywake 0`
  - `sudo pmset standby 0`
  - `sudo pmset tcpkeepalive 0`
+ - `sudo pmset lidwake 0`
+
+### Keyboard, Trackpad and Magic Trackpad
+- Look up & data detectors
+- Secondary click (with two fingers, in bottom left corner*, in bottom right corner*)
+- Tap to click
+- Scrolling
+- Zoom in or out
+- Smart zoom
+- Etc ...
+- `Dont forget to make setting in Sleep and Wake on Terminal`
 
 ### CPU Power Management
 * Native CPU Power Management
@@ -144,10 +155,9 @@ macOS Monterey
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * ThermalSolution.kext: driver for Signal Processing Controller for Intel(R) Xeon ( now IETM and B0D4 devices are correctly attached as reported by IORegistryExplorer ) 
 * USBMap.kext: For Mapping USB Port
-* VoodooI2C.kext: Fix Touchpad
 * VerbStub.kext: For Fix JackAudio with ComboJack
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
-* VoodooPS2Controller.kext: Enable Keyboard
+* VoodooPS2Controller.kext: Enable Keyboard and Touchpad
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
 
 </details>
@@ -171,6 +181,7 @@ macOS Monterey
 * PWRB: Power Sleep Button
 * SLPB: Sleep Button Device
 * GPRW: For Fix Sleep/LID/Hibernate
+* GPI0: For Fix Native Touchpad
 * `Now All SSDT* make to SSDT-HFDZ for make Simple`
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
