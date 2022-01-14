@@ -94,7 +94,7 @@ macOS Monterey
 ### Audio
 * For ALC256 on this my Machine, I use `layout-id = 56`.
 * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
-* Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone. ( See on Branch ComboJack. )
+* Start from this version, I change to use `ALCPlugFix`. It gives better sound experience and performance when using the headset/headphone.
 
 </details>
 
@@ -155,7 +155,6 @@ macOS Monterey
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * ThermalSolution.kext: driver for Signal Processing Controller for Intel(R) Xeon ( now IETM and B0D4 devices are correctly attached as reported by IORegistryExplorer ) 
 * USBMap.kext: For Mapping USB Port
-* VerbStub.kext: For Fix JackAudio with ComboJack
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
@@ -181,7 +180,7 @@ macOS Monterey
 * PWRB: Power Sleep Button
 * SLPB: Sleep Button Device
 * GPRW: For Fix Sleep/LID/Hibernate
-* GPI0: For Fix Native Touchpad
+* WN09: Mapping DELL Keyboard for VoodooPS2 Keyboard
 * `Now All SSDT* make to SSDT-HFDZ for make Simple`
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
