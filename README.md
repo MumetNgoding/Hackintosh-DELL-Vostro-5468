@@ -155,6 +155,7 @@ macOS Monterey
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * ThermalSolution.kext: driver for Signal Processing Controller for Intel(R) Xeon ( now IETM and B0D4 devices are correctly attached as reported by IORegistryExplorer ) 
 * USBMap.kext: For Mapping USB Port
+* VoodooI2C: Fix Trackpad
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
@@ -179,8 +180,8 @@ macOS Monterey
 * PMCR: Power Management Capabilities Register
 * PWRB: Power Sleep Button
 * SLPB: Sleep Button Device
+* GPI0: Pinning I2C Trackpad
 * GPRW: For Fix Sleep/LID/Hibernate
-* WN09: Mapping DELL Keyboard for VoodooPS2 Keyboard
 * `Now All SSDT* make to SSDT-HFDZ for make Simple`
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
@@ -219,7 +220,8 @@ macOS Monterey
 ![26](Screenshot/26.png)
 ![27](Screenshot/27.png)
 ![28](Screenshot/28.png)
-
+*[UPDATE USBMap Manual from DORTANIA]
+![29](Screenshot/29.png)
 </details>
 
 ## Credit
