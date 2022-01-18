@@ -149,13 +149,12 @@ macOS Monterey
 * AirportItlwm.kext: Intel AC 3165 Wirelless
 * AppleALC.kext: Enable Audio with layout-id=56
 * BlueToolFixup.kext: Enable Bluetooth
-* RealtekCardReader.kext: [Maybe fixed CardReader, because not tested now]()
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * PropertyInjector.kext: Property Inject for Sunrise Thermal Subsystem
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * ThermalSolution.kext: driver for Signal Processing Controller for Intel(R) Xeon ( now IETM and B0D4 devices are correctly attached as reported by IORegistryExplorer ) 
 * USBMap.kext: For Mapping USB Port
-* VoodooI2C: Fix Trackpad
+* VoodooI2C and VoodooI2CHID: Fix Trackpad and Enable trackpad interrupt mode, pair with VoodooI2C.kext and VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
@@ -178,10 +177,7 @@ macOS Monterey
 * DMAC: Direct Memory Access Control
 * MEM2: Expanded Memory Option
 * PMCR: Power Management Capabilities Register
-* PWRB: Power Sleep Button
-* SLPB: Sleep Button Device
-* GPI0: Pinning I2C Trackpad
-* GPRW: For Fix Sleep/LID/Hibernate
+* AC: Load AppleACPIACAdapter
 * `Now All SSDT* make to SSDT-HFDZ for make Simple`
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
