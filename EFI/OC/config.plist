@@ -209,7 +209,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>R1BSVwI=</data>
 				<key>Limit</key>
@@ -1269,7 +1269,7 @@
 				<key>SystemAudioVolume</key>
 				<data>IA==</data>
 				<key>boot-args</key>
-				<string>darkwake=0 alcverbs=1 -vi2c-force-polling</string>
+				<string>darkwake=0 alcverbs=1 -vi2c-force-polling igfxonln=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>

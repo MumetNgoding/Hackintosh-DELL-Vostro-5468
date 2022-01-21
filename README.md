@@ -178,6 +178,7 @@ macOS Monterey
 * MEM2: Expanded Memory Option
 * PMCR: Power Management Capabilities Register
 * AC: Load AppleACPIACAdapter
+* GPRW: Fix Sleep ( Becauase i see broken sleep if use HDMI )
 * `Now All SSDT* make to SSDT-HFDZ for make Simple`
 * You Can See Configuration SSDT from [Dortania](https://dortania.github.io/OpenCore-Post-Install/#how-to-follow-this-guide)
 
