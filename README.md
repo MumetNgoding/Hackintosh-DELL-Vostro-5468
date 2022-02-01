@@ -58,6 +58,7 @@ macOS Monterey
 | Wi-Fi/Bluetooth | ✅ Working |
 | Hibernation | ✅ Working |
 | FileVault | ✅ Working |
+| ClamShell |   Working |
 | Airdrop/Handoff | [-] Not Tested |
 | BootCamp | [-] Not Tested |
 | SD Card | ❌ [-] Not Tested |
@@ -92,9 +93,9 @@ macOS Monterey
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 56`.
+* For ALC256 on this my Machine, I use `layout-id = 17`.
 * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
-* Start from this version, I change to use `ALCPlugFix`. It gives better sound experience and performance when using the headset/headphone.
+* Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone.
 
 </details>
 
@@ -106,7 +107,7 @@ macOS Monterey
 
 ### Sleep, Wake and Hibernation
 * Hibernation now is works with GPRW Patch and support for native macOS `hibernatemode3`
-* Config in Terminal :
+* Config in Terminal ( Optional ) :
  - `sudo pmset powernap 0`
  - `sudo pmset proximitywake 0`
  - `sudo pmset standby 0`
@@ -121,7 +122,6 @@ macOS Monterey
 - Zoom in or out
 - Smart zoom
 - Etc ...
-- `Dont forget to make setting in Sleep and Wake on Terminal`
 
 ### CPU Power Management
 * Native CPU Power Management
@@ -157,6 +157,7 @@ macOS Monterey
 * VoodooI2C and VoodooI2CHID: Fix Trackpad and Enable trackpad interrupt mode, pair with VoodooI2C.kext and VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
+* VerbStub.kext: for Handle ComboJack ( Headphone Fix )
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
 
 </details>
@@ -219,6 +220,8 @@ macOS Monterey
 ![28](Screenshot/28.png)
 *[UPDATE USBMap Manual from DORTANIA]
 ![29](Screenshot/29.png)
+*[UPDATE Benchmark]
+![30](Screenshot/30.png)
 </details>
 
 ## Credit
