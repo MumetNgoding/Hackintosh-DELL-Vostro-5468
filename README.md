@@ -9,7 +9,7 @@ macOS Monterey
 </p>
 
 * macOS:
-  - Monterey 12.0.2 ✅
+  - Monterey 12.0.3 ✅
 * Windows:
   - Windows 11 ✅
 * Bootloader: OpenCore 0.7.8.
