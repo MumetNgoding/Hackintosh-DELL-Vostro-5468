@@ -93,7 +93,7 @@ macOS Monterey
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 17`.
+* For ALC256 on this my Machine, I use `layout-id = 13`.
 * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
 * Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone.
 
