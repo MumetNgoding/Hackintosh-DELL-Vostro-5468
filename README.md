@@ -1,18 +1,18 @@
 # Hackintosh-DELL-Vostro-5468
 
 
-![Monterey](Screenshot/1.png)
+![Ventura 13.0 Beta](Screenshot/1.png)
 
 
 <p align = "center">
-macOS Monterey
+macOS Ventura 13.0 Beta
 </p>
 
 * macOS:
-  - Monterey 12.0.3 ✅
+  - Ventura 13.0 Beta ✅
 * Windows:
   - Windows 11 ✅
-* Bootloader: OpenCore 0.7.8.
+* Bootloader: OpenCore 0.8.1
 * EFI can be used for both for installation and booting from SSD.
 
 ## Introduction
@@ -93,7 +93,7 @@ macOS Monterey
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 13`.
+* For ALC256 on this my Machine, I use `layout-id = 16`.
 * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
 * Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone.
 
@@ -147,7 +147,7 @@ macOS Monterey
 </br>
 
 * AirportItlwm.kext: Intel AC 3165 Wirelless
-* AppleALC.kext: Enable Audio with layout-id=56
+* AppleALC.kext: Enable Audio with layout-id=16
 * BlueToolFixup.kext: Enable Bluetooth
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * PropertyInjector.kext: Property Inject for Sunrise Thermal Subsystem
