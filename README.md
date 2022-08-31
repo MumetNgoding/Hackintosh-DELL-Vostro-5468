@@ -48,8 +48,8 @@ macOS Monterey
 | Brightness control slider | ✅ Working |
 | Special function keys (audio, brightness...) | ✅ Working |
 | Ethernet | ✅ Working |
-| Audio | ✅ Working |
-| Touchpad | ✅ Working |
+| Audio and HDMI Audio | ✅ Working |
+| Multi-Touch Trackpad | ✅ Working |
 | Battery | ✅ Working |
 | iMessage/Facetime and App Store | ✅ Working  |
 | Speakers and Headphones | ✅ Working |
@@ -58,10 +58,10 @@ macOS Monterey
 | Wi-Fi/Bluetooth | ✅ Working |
 | Hibernation | ✅ Working |
 | FileVault | ✅ Working |
-| ClamShell |   Working |
-| Airdrop/Handoff | [-] Not Tested |
+| ClamShell | ✅ Working |
 | BootCamp | [-] Not Tested |
-| SD Card | ❌ [-] Not Tested |
+| Airdrop/Handoff | ❌ Not Tested |
+| SD Card | ❌ Not Tested |
 | Fingerprint reader | ❌ Not working |
 
 </details>
