@@ -323,7 +323,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>FadtEnableReset</key>
-			<false/>
+			<true/>
 			<key>NormalizeHeaders</key>
 			<false/>
 			<key>RebaseRegions</key>
@@ -1010,7 +1010,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>UTBMap.kext</string>
+				<string>USBToolBox.kext/Contents/Plugins/UTBMap.kext</string>
 				<key>Comment</key>
 				<string>UTBMap.kext</string>
 				<key>Enabled</key>
@@ -1028,7 +1028,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>IntelBluetoothFirmware.kext</string>
+				<string>BlueToolFixup.kext/Contents/Plugins/IntelBluetoothFirmware.kext</string>
 				<key>Comment</key>
 				<string>IntelBluetoothFirmware.kext</string>
 				<key>Enabled</key>
@@ -1046,7 +1046,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>IntelBTPatcher.kext</string>
+				<string>BlueToolFixup.kext/Contents/Plugins/IntelBTPatcher.kext</string>
 				<key>Comment</key>
 				<string>IntelBTPatcher.kext</string>
 				<key>Enabled</key>
@@ -1130,7 +1130,7 @@
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
-			<false/>
+			<true/>
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
@@ -1142,7 +1142,7 @@
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
-			<false/>
+			<true/>
 			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
@@ -1163,7 +1163,7 @@
 			<key>CustomKernel</key>
 			<false/>
 			<key>FuzzyMatch</key>
-			<true/>
+			<false/>
 			<key>KernelArch</key>
 			<string>Auto</string>
 			<key>KernelCache</key>
@@ -1319,8 +1319,6 @@
 				<false/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>OpenShell.efi</string>
 				<key>Path</key>
@@ -1341,8 +1339,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>BootKicker.efi</string>
 				<key>Path</key>
@@ -1363,8 +1359,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>ChipTune.efi</string>
 				<key>Path</key>
@@ -1385,8 +1379,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>CleanNvram.efi</string>
 				<key>Path</key>
@@ -1407,8 +1399,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>ControlMsrE2.efi</string>
 				<key>Path</key>
@@ -1429,8 +1419,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>CsrUtil.efi</string>
 				<key>Path</key>
@@ -1451,8 +1439,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>GopStop.efi</string>
 				<key>Path</key>
@@ -1473,8 +1459,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>KeyTester.efi</string>
 				<key>Path</key>
@@ -1495,8 +1479,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>MmapDump.efi</string>
 				<key>Path</key>
@@ -1517,8 +1499,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>OpenControl.efi</string>
 				<key>Path</key>
@@ -1539,8 +1519,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>ResetSystem.efi</string>
 				<key>Path</key>
@@ -1561,8 +1539,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>RtcRw.efi</string>
 				<key>Path</key>
@@ -1583,8 +1559,6 @@
 				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
-				<key>FullNvramAccess</key>
-				<false/>
 				<key>Name</key>
 				<string>TpmInfo.efi</string>
 				<key>Path</key>
@@ -1619,7 +1593,7 @@
 				<key>SystemAudioVolume</key>
 				<data>IA==</data>
 				<key>boot-args</key>
-				<string>darkwake=0 alcverbs=1 -vi2c-force-polling igfxonln=1 -v</string>
+				<string>darkwake=0 alcverbs=1 -vi2c-force-polling igfxonln=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1644,10 +1618,10 @@
 				<string>ForceDisplayRotationInEFI</string>
 			</array>
 		</dict>
+		<key>LegacyEnable</key>
+		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
-		<key>WriteFlash</key>
-		<true/>
 		<key>LegacySchema</key>
 		<dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -1676,6 +1650,8 @@
 				<string>BootOrder</string>
 			</array>
 		</dict>
+		<key>WriteFlash</key>
+		<true/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -1793,8 +1769,6 @@
 				<string>OpenCanopy.efi</string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
 			</dict>
@@ -1805,8 +1779,6 @@
 				<string>OpenRuntime.efi</string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
 			</dict>
@@ -1817,8 +1789,6 @@
 				<string>HfsPlus.efi</string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
 				<string>HfsPlus.efi</string>
 			</dict>
@@ -1829,8 +1799,6 @@
 				<string>ResetNvramEntry.efi</string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
 				<string>ResetNvramEntry.efi</string>
 			</dict>
@@ -1841,22 +1809,8 @@
 				<string>ToggleSipEntry.efi</string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
 				<string>ToggleSipEntry.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>OpenHfsPlus.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>LoadEarly</key>
-				<false/>
-				<key>Path</key>
-				<string>OpenHfsPlus.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>

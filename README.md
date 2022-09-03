@@ -12,7 +12,7 @@ macOS Ventura 13.0 Beta
   - Ventura 13.0 Beta ✅
 * Windows:
   - Windows 11 ✅
-* Bootloader: OpenCore 0.8.1
+* Bootloader: OpenCore MOD 0.8.4
 * EFI can be used for both for installation and booting from SSD.
 
 ## Introduction
@@ -93,7 +93,7 @@ macOS Ventura 13.0 Beta
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 16`.
+* For ALC256 on this my Machine, I use `layout-id = 76`.
 * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
 * Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone.
 
@@ -105,14 +105,14 @@ macOS Ventura 13.0 Beta
 ### Wireless, Bluetooth
 * The stock Intel AC 3165 can be worked well with [OpenIntelWireless](https://github.com/OpenIntelWireless).
 
-### Sleep, Wake and Hibernation
+<!-- ### Sleep, Wake and Hibernation
 * Hibernation now is works with GPRW Patch and support for native macOS `hibernatemode3`
 * Config in Terminal ( Optional ) :
  - `sudo pmset powernap 0`
  - `sudo pmset proximitywake 0`
  - `sudo pmset standby 0`
  - `sudo pmset tcpkeepalive 0`
- - `sudo pmset lidwake 0`
+ - `sudo pmset lidwake 0` -->
 
 ### Keyboard, Trackpad and Magic Trackpad
 - Look up & data detectors
@@ -147,13 +147,13 @@ macOS Ventura 13.0 Beta
 </br>
 
 * AirportItlwm.kext: Intel AC 3165 Wirelless
-* AppleALC.kext: Enable Audio with layout-id=16
+* AppleALC.kext: Enable Audio with layout-id=76
 * BlueToolFixup.kext: Enable Bluetooth
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * PropertyInjector.kext: Property Inject for Sunrise Thermal Subsystem
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * ThermalSolution.kext: driver for Signal Processing Controller for Intel(R) Xeon ( now IETM and B0D4 devices are correctly attached as reported by IORegistryExplorer ) 
-* USBMap.kext: For Mapping USB Port
+* UTBToolBox.kext: For Mapping USB Port
 * VoodooI2C and VoodooI2CHID: Fix Trackpad and Enable trackpad interrupt mode, pair with VoodooI2C.kext and VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
