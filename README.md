@@ -5,14 +5,14 @@
 
 
 <p align = "center">
-macOS Ventura 13.0 Beta
+macOS Ventura 13.0 Beta 5
 </p>
 
 * macOS:
-  - Ventura 13.0 Beta ✅
+  - Ventura 13.0 Beta 5 ✅
 * Windows:
   - Windows 11 ✅
-* Bootloader: OpenCore MOD 0.8.4
+* Bootloader: OpenCore MOD 0.8.5
 * EFI can be used for both for installation and booting from SSD.
 
 ## Introduction
@@ -60,9 +60,9 @@ macOS Ventura 13.0 Beta
 | FileVault | ✅ Working |
 | ClamShell | ✅ Working |
 | BootCamp | [-] Not Tested |
-| Airdrop/Handoff | ❌ Not Tested |
-| SD Card | ❌ Not Tested |
-| Fingerprint reader | ❌ Not working |
+| Airdrop/Handoff | ❌ Not Working |
+| SD Card | ❌ Not Working |
+| Fingerprint reader | ❌ Not Working |
 
 </details>
 
