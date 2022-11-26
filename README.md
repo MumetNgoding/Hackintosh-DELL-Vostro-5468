@@ -1,18 +1,18 @@
 # Hackintosh-DELL-Vostro-5468
 
 
-![Ventura 13.0 Beta](Screenshot/1.png)
+![Ventura 13.1.3 Beta](Screenshot/1.png)
 
 
 <p align = "center">
-macOS Ventura 13.0 Beta 5
+macOS Ventura 13.1 Beta 3
 </p>
 
 * macOS:
-  - Ventura 13.0 Beta 5 ✅
+  - Ventura 13.1 Beta 3 ✅
 * Windows:
   - Windows 11 ✅
-* Bootloader: OpenCore MOD 0.8.5
+* Bootloader: OpenCore 0.8.6
 * EFI can be used for both for installation and booting from SSD.
 
 ## Introduction
