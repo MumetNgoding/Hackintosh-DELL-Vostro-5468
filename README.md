@@ -155,6 +155,7 @@ macOS Big Sur
 * VoodooI2C and VoodooI2CHID: Fix Trackpad and Enable trackpad interrupt mode, pair with VoodooI2C.kext and VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
+* VerbStub.kext: for Handle ComboJack ( Headphone Fix )
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
 
 </details>
