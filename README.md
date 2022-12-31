@@ -148,6 +148,7 @@ macOS Big Sur
 
 * AirportItlwm.kext: Intel AC 3165 Wirelless
 * AppleALC.kext: Enable Audio with layout-id=76
+* IntelBluetoothInjector.kext : Enable swith on/off bluetooth toggle (Remove if use Monterey+)
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * USBMap.kext: For Mapping USB Port
@@ -162,24 +163,24 @@ macOS Big Sur
 <summary><strong>DSDT Patch Docs</strong></summary>
 </br>
 
-* Fix _WAK Arg0 v2
-* HPET Fix
-* SMBUS Fix
-* IRQ Fix
-* RTC Fix
-* Fix Mutex with non-zero SyncLevel
-* Add MCHC
-* Patch USB_7/8 series
-* Sb_prw_0x6d (instant wake)
-* Dmac
-* Dtgp
-* Slpb
-* Usbx
-* Als0
-* Pnlf
-* Xosi
-* Cpu power management
-* Brightness keys
+* Fix _WAK Arg0 v2 : For wake from sleep to turn on various.
+* HPET : Patches out IRQ conflicts.
+* SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system.
+* IRQ Fix : Fixes non-working audio on certain OEM (Dell, HP) machines.
+* RTC : Fix the system clocks found on newer hardware.
+* Fix Mutex with non-zero SyncLevel : Fixes Failed Battery Status and other related issues.
+* Add MCHC : Adds missing MCHC Device.
+* Patch USB_7/8 series : Injects Power Properties for USB.
+* Sb_prw_0x6d (instant wake) : To fix the sleep/wake function.
+* Dmac : Adds a DMA Controller to the LPCB (Low Pin Count Bus).
+* Dtgp : Method that passes through calls to _DSM methods on various Device objects.
+* Slpb : For sleep button.
+* Usbx : Supply USB power properties for Skylake and newer, so we will bundle this device in with the EC fix.
+* Als0 : Fix Ambient Light Sensor.
+* Pnlf : Fix Brightness Slider.
+* Xosi : Fixing I2C trackpads is enabling them within ACPI.
+* Cpu power management : Fix power management CPU.
+* Brightness keys : Fix brightness keyss up and down.
 
 </details>
 
