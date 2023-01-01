@@ -315,8 +315,6 @@
 				<string>Built-In</string>
 				<key>device_type</key>
 				<string>Audio device</string>
-				<key>layout-id</key>
-				<integer>76</integer>
 				<key>model</key>
 				<string>Sunrise Point-LP HD Audio</string>
 			</dict>
@@ -708,6 +706,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VerbStub.kext</string>
+				<key>Comment</key>
+				<string>VerbStub.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VerbStub</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
