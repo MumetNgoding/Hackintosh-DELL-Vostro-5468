@@ -182,6 +182,7 @@ macOS Big Sur
 * Xosi : Fixing I2C trackpads is enabling them within ACPI.
 * Cpu power management : Fix power management CPU.
 * Brightness keys : Fix brightness keyss up and down.
+* Audio patch : For patch layout-id audio in DSDT.
 
 </details>
 
