@@ -186,7 +186,7 @@ macOS Big Sur
 
 </details>
 
-<!-- <details>
+<details>
 <summary><strong>Screenshot</strong></summary>
 </br>
 
@@ -206,24 +206,7 @@ macOS Big Sur
 ![14](Screenshot/14.png)
 ![15](Screenshot/15.png)
 ![16](Screenshot/16.png)
-![17](Screenshot/17.png)
-![18](Screenshot/18.png)
-![19](Screenshot/19.png)
-![20](Screenshot/20.png)
-![21](Screenshot/21.png)
-![22](Screenshot/22.png)
-![23](Screenshot/23.png)
-![24](Screenshot/24.png)
-![25](Screenshot/25.png)
-* [UPDATE]
-![26](Screenshot/26.png)
-![27](Screenshot/27.png)
-![28](Screenshot/28.png)
-*[UPDATE USBMap Manual from DORTANIA]
-![29](Screenshot/29.png)
-*[UPDATE Benchmark]
-![30](Screenshot/30.png)
-</details> -->
+</details>
 
 ## Credit
 - [Apple](https://apple.com) for macOS;
