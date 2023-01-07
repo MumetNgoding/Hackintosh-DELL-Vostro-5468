@@ -208,6 +208,9 @@ macOS Big Sur
 ![16](Screenshot/16.png)
 ![17](Screenshot/17.png)
 ![18](Screenshot/18.png)
+![19](Screenshot/19.png)
+![20](Screenshot/20.png)
+![21](Screenshot/21.png)
 </details>
 
 ## Credit
