@@ -17,7 +17,7 @@ macOS Big Sur
 
 ## Introduction
 
-<details>  
+<details>
 <summary><strong>System Overview</strong></summary>
 </br>
 
@@ -35,7 +35,7 @@ macOS Big Sur
 
 </details>
 
-<details>  
+<details>
 <summary><strong>Current Status</strong></summary>
 </br>
 
@@ -68,7 +68,7 @@ macOS Big Sur
 
 ## Installation
 
-<details>  
+<details>
 <summary><strong>BIOS Configuration</strong></summary>
 </br>
 
@@ -126,6 +126,12 @@ macOS Big Sur
 ### CPU Power Management
 * Native CPU Power Management
 
+### Disable CFG Lock
+* Removing the CFG Lock enables better compatibility with Mac and better CPU and power management
+![cfg](Screenshot/cfg.png)
+* For set CFG LOCK Disabled `setup_var 0x4DE 0x0` in [modGRUBShell.efi](https://github.com/datasone/grub-mod-setup_var/releases)
+* After this mod set false the quirks AppleXcpmCfgLock
+
 </details>
 
 <details>
@@ -142,7 +148,7 @@ macOS Big Sur
 * If they don't, follow [this in-depth guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html). It goes deeper into ROM, clearing NVRAM, clearing Keychain (missing this step might cause major issues), and much more.
 </details>
 
-<details>  
+<details>
 <summary><strong>Kext Docs</strong></summary>
 </br>
 
