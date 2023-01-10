@@ -189,6 +189,7 @@ macOS Big Sur
 * Cpu power management : Fix power management CPU.
 * Brightness keys : Fix brightness keyss up and down.
 * Audio patch : For patch layout-id audio in DSDT.
+* USB Patch Native without Kext/Injector.
 
 </details>
 
