@@ -155,6 +155,7 @@ macOS Big Sur
 * AirportItlwm.kext: Intel AC 3165 Wirelless
 * AppleALC.kext: Enable Audio with layout-id=76
 * IntelBluetoothInjector.kext : Enable swith on/off bluetooth toggle (Remove if use Monterey+)
+* CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * USBMap.kext: For Mapping USB Port
