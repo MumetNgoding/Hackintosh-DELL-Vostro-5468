@@ -12,7 +12,7 @@ macOS Big Sur
   - macOS Big Sur ✅
 * Windows:
   - Windows 11 ✅
-* Bootloader: OpenCore 0.8.7
+* Bootloader: OpenCore 0.8.8
 * EFI can be used for both for installation and booting from SSD.
 
 ## Introduction
@@ -121,6 +121,7 @@ macOS Big Sur
 - Scrolling
 - Zoom in or out
 - Smart zoom
+- Enable Drag and Drop use Clickpad: Some trackpad settings have been moved on 10.12+, this is the case for tap to drag. Navigate to the Accessibility PrefPane. On the left, select 'Mouse & Trackpad' and then 'Trackpad Option'. Here you must select 'Enable Drag' and set "Without drag lock"
 - Etc ...
 
 ### CPU Power Management
@@ -158,7 +159,6 @@ macOS Big Sur
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
-* USBMap.kext: For Mapping USB Port
 * VoodooI2C and VoodooI2CHID: Fix Trackpad and Enable trackpad interrupt mode, pair with VoodooI2C.kext and VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
@@ -186,7 +186,7 @@ macOS Big Sur
 * Usbx : Supply USB power properties for Skylake and newer, so we will bundle this device in with the EC fix.
 * Als0 : Fix Ambient Light Sensor.
 * Pnlf : Fix Brightness Slider.
-* Xosi : Fixing I2C trackpads is enabling them within ACPI.
+* Xosi : Fixing I2C trackpads and Brightness Keyss is enabling them within ACPI.
 * Cpu power management : Fix power management CPU.
 * Brightness keys : Fix brightness keyss up and down.
 * Audio patch : For patch layout-id audio in DSDT.
