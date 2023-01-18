@@ -105,14 +105,14 @@ macOS Big Sur
 ### Wireless, Bluetooth
 * The stock Intel AC 3165 can be worked well with [OpenIntelWireless](https://github.com/OpenIntelWireless).
 
-<!-- ### Sleep, Wake and Hibernation
-* Hibernation now is works with GPRW Patch and support for native macOS `hibernatemode3`
+### Sleep, Wake and Hibernation
 * Config in Terminal ( Optional ) :
  - `sudo pmset powernap 0`
  - `sudo pmset proximitywake 0`
  - `sudo pmset standby 0`
  - `sudo pmset tcpkeepalive 0`
- - `sudo pmset lidwake 0` -->
+ - `sudo pmset lidwake 0`
+ - NOTE: please use powernap 0 to fix itlwm try reconnect many times.
 
 ### Keyboard, Trackpad and Magic Trackpad
 - Look up & data detectors
@@ -219,6 +219,8 @@ macOS Big Sur
 ![19](Screenshot/19.png)
 ![20](Screenshot/20.png)
 ![21](Screenshot/21.png)
+- New Update CPU Management
+![22](Screenshot/22.png)
 </details>
 
 ## Credit
