@@ -78,7 +78,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>Change _OSID to XSID</string>
+				<string>Change _OSID to XSID = patch to allow the backlight keys to work</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -361,9 +361,9 @@
 				<key>AAPL,slot-name</key>
 				<string>Built-In</string>
 				<key>device_type</key>
-				<string>Signal processing controller</string>
+				<string>HafidzRadhival</string>
 				<key>model</key>
-				<string>Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem</string>
+				<string>Patched By </string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x2)</key>
 			<dict>
@@ -753,6 +753,42 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/CPUFriend</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>PropertyInjector.kext</string>
+				<key>Comment</key>
+				<string>PropertyInjector.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/PropertyInjector</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>PropertyInjector.kext/Contents/PlugIns/SunrisePointLPInjector.kext</string>
+				<key>Comment</key>
+				<string>SunrisePointLPInjector.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
