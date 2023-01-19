@@ -5,11 +5,11 @@
 
 
 <p align = "center">
-macOS Big Sur
+macOS Ventura
 </p>
 
 * macOS:
-  - macOS Big Sur ✅
+  - macOS Ventura ✅
 * Windows:
   - Windows 11 ✅
 * Bootloader: OpenCore 0.8.8
@@ -155,7 +155,7 @@ macOS Big Sur
 
 * AirportItlwm.kext: Intel AC 3165 Wirelless
 * AppleALC.kext: Enable Audio with layout-id=76
-* IntelBluetoothInjector.kext : Enable swith on/off bluetooth toggle (Remove if use Monterey+)
+* BlueToolFixup.kext: Enable bluetooth in Ventura
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
@@ -173,7 +173,7 @@ macOS Big Sur
 
 * Fix _WAK Arg0 v2 : For wake from sleep to turn on various.
 * HPET : Patches out IRQ conflicts.
-* SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system.
+* SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system and added AppleMikeyDriver under SMBUS.
 * IRQ Fix : Fixes non-working audio on certain OEM (Dell, HP) machines.
 * RTC : Fix the system clocks found on newer hardware.
 * Fix Mutex with non-zero SyncLevel : Fixes Failed Battery Status and other related issues.
@@ -219,7 +219,7 @@ macOS Big Sur
 ![19](Screenshot/19.png)
 ![20](Screenshot/20.png)
 ![21](Screenshot/21.png)
-- New Update CPU Management
+- New Update CPU Management</br>
 ![22](Screenshot/22.png)
 </details>
 
