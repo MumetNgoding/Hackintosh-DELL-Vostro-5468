@@ -1,8 +1,6 @@
 # Hackintosh-DELL-Vostro-5468
 
-
-![macOs Big Sur](Screenshot/1.png)
-
+![macOs Ventura](Screenshot/1.png)
 
 <p align = "center">
 macOS Ventura
@@ -93,9 +91,9 @@ macOS Ventura
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 76`.
-* Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
-* Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone.
+* For ALC256 on this my Machine, I use `layout-id = 69` (Patched on DSDT).
+<!-- * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
+* Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone. -->
 
 </details>
 
@@ -112,7 +110,7 @@ macOS Ventura
  - `sudo pmset standby 0`
  - `sudo pmset tcpkeepalive 0`
  - `sudo pmset lidwake 0`
- - NOTE: please use powernap 0 to fix itlwm try reconnect many times.
+* NOTE: please use powernap 0 to fix itlwm try reconnect many times.
 
 ### Keyboard, Trackpad and Magic Trackpad
 - Look up & data detectors
@@ -138,7 +136,7 @@ macOS Ventura
 <details>
 <summary><strong>iServices</strong></summary>
 
-* To use iMessage and other Apple services, you need to generate your own serial numbers. This can be done using [CorpNewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). Make sure model is `MacBookPro15,1`. Then, go [Apple Check Coverage page](https://checkcoverage.apple.com/) to check your generated serial numbers. If the website tells you that the serial number **is not valid**, that is fine. Otherwise, you have to generate a new set.
+* To use iMessage and other Apple services, you need to generate your own serial numbers. This can be done using [CorpNewt's GenSMBIOS](https://github.com/corpnewt/GenSMBIOS). Make sure model is `MacBookPro14,1`. Then, go [Apple Check Coverage page](https://checkcoverage.apple.com/) to check your generated serial numbers. If the website tells you that the serial number **is not valid**, that is fine. Otherwise, you have to generate a new set.
 
 * Next you will have to copy the following values to your `config.plist`:
   - Serial Number -> `PlatformInfo/Generic/SystemSerialNumber`.
@@ -153,16 +151,17 @@ macOS Ventura
 <summary><strong>Kext Docs</strong></summary>
 </br>
 
-* AirportItlwm.kext: Intel AC 3165 Wirelless
-* AppleALC.kext: Enable Audio with layout-id=76
-* BlueToolFixup.kext: Enable bluetooth in Ventura
+* AirportItlwm.kext: Intel AC 3165 Wirelles
+* AppleALC.kext: Enable Audio with layout-id=69
+* BlueToolFixup.kext: Enable bluetooth in Ventura (if you on BigSur you can remove this, because Native on Big Sur)
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
+* PropertyInjector.kext: Inject Thermal Subsystem
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
-* VoodooI2C and VoodooI2CHID: Fix Trackpad and Enable trackpad interrupt mode, pair with VoodooI2C.kext and VoodooI2CHID.kext
+* VoodooI2C and VoodooI2CHID: Fix Trackpad, pair with extension VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
-* VerbStub.kext: for Handle ComboJack ( Headphone Fix )
+<!-- * VerbStub.kext: for Handle ComboJack ( Headphone Fix ) -->
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
 
 </details>
@@ -182,14 +181,14 @@ macOS Ventura
 * Sb_prw_0x6d (instant wake) : To fix the sleep/wake function.
 * Dmac : Adds a DMA Controller to the LPCB (Low Pin Count Bus).
 * Dtgp : Method that passes through calls to _DSM methods on various Device objects.
-* Slpb : For sleep button.
+* Slpb : Fix sleep power button.
 * Usbx : Supply USB power properties for Skylake and newer, so we will bundle this device in with the EC fix.
-* Als0 : Fix Ambient Light Sensor.
+* AlsD : Add Fake Ambient Light Sensor.
 * Pnlf : Fix Brightness Slider.
 * Xosi : Fixing I2C trackpads and Brightness Keyss is enabling them within ACPI.
-* Cpu power management : Fix power management CPU.
+* Cpu power management : Fix power management CPU-Frequency.
 * Brightness keys : Fix brightness keyss up and down.
-* Audio patch : For patch layout-id audio in DSDT.
+* Audio patch : Patch layout-id audio in DSDT.
 * USB Patch Native without Kext/Injector.
 
 </details>
