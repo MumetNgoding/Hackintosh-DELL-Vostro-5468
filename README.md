@@ -151,7 +151,7 @@ macOS Ventura
 <summary><strong>Kext Docs</strong></summary>
 </br>
 
-* AirportItlwm.kext: Intel AC 3165 Wirelles
+* AirportItlwm.kext: Intel AC 3165 Wireless
 * AppleALC.kext: Enable Audio with layout-id=69
 * BlueToolFixup.kext: Enable bluetooth in Ventura (if you on BigSur you can remove this, because Native on Big Sur)
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
@@ -220,6 +220,8 @@ macOS Ventura
 ![21](Screenshot/21.png)
 - New Update CPU Management</br>
 ![22](Screenshot/22.png)
+- New Update USB Port Mapping</br>
+![23](Screenshot/23.png)
 </details>
 
 ## Credit
