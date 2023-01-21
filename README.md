@@ -190,6 +190,7 @@ macOS Ventura
 * Brightness keys : Fix brightness keyss up and down.
 * Audio patch : Patch layout-id audio in DSDT.
 * USB Patch Native without Kext/Injector.
+* _PLD Buffer/Package : For return a variable length Package of Buffers.
 
 </details>
 
