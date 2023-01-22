@@ -191,6 +191,11 @@ macOS Ventura
 * Audio patch : Patch layout-id audio in DSDT.
 * USB Patch Native without Kext/Injector.
 * _PLD Buffer/Package : For return a variable length Package of Buffers.
+* Gfx0 memory patch.
+* Fix unknownObj.
+* PEGP patch.
+* _PTS method fix.
+* Cleanup unused code.
 
 </details>
 
@@ -223,6 +228,8 @@ macOS Ventura
 ![22](Screenshot/22.png)
 - New Update USB Port Mapping</br>
 ![23](Screenshot/23.png)
+- New Update Cleanup Unused Code DSDT</br>
+![24](Screenshot/24.png)
 </details>
 
 ## Credit
