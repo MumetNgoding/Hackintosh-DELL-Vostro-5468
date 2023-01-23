@@ -161,8 +161,8 @@ macOS Ventura
 * VoodooI2C and VoodooI2CHID: Fix Trackpad, pair with extension VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
-<!-- * VerbStub.kext: for Handle ComboJack ( Headphone Fix ) -->
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
+<!-- * VerbStub.kext: for Handle ComboJack ( Headphone Fix ) -->
 
 </details>
 
@@ -191,10 +191,6 @@ macOS Ventura
 * Audio patch : Patch layout-id audio in DSDT.
 * USB Patch Native without Kext/Injector.
 * _PLD Buffer/Package : For return a variable length Package of Buffers.
-* Gfx0 memory patch.
-* Fix unknownObj.
-* PEGP patch.
-* _PTS method fix.
 * Cleanup unused code.
 
 </details>
