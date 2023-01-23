@@ -191,6 +191,7 @@ macOS Ventura
 * Audio patch : Patch layout-id audio in DSDT.
 * USB Patch Native without Kext/Injector.
 * _PLD Buffer/Package : For return a variable length Package of Buffers.
+* Fix ADBG Error.
 * Cleanup unused code.
 
 </details>
