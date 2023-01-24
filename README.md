@@ -91,9 +91,9 @@ macOS Ventura
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 69` (Patched on DSDT).
-<!-- * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
-* Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone. -->
+* For ALC256 on this my Machine, I use `layout-id = 21` (Patched on DSDT).
+* Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
+* Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone.
 
 </details>
 
@@ -152,7 +152,7 @@ macOS Ventura
 </br>
 
 * AirportItlwm.kext: Intel AC 3165 Wireless
-* AppleALC.kext: Enable Audio with layout-id=69
+* AppleALC.kext: Enable Audio with layout-id=21
 * BlueToolFixup.kext: Enable bluetooth in Ventura (if you on BigSur you can remove this, because Native on Big Sur)
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
@@ -162,7 +162,7 @@ macOS Ventura
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
-<!-- * VerbStub.kext: for Handle ComboJack ( Headphone Fix ) -->
+* VerbStub.kext: for Handle ComboJack ( Headphone Fix )
 
 </details>
 
