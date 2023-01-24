@@ -161,8 +161,8 @@ macOS Ventura
 * VoodooI2C and VoodooI2CHID: Fix Trackpad, pair with extension VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
-* WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
 * VerbStub.kext: for Handle ComboJack ( Headphone Fix )
+* WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
 
 </details>
 
@@ -172,7 +172,8 @@ macOS Ventura
 
 * Fix _WAK Arg0 v2 : For wake from sleep to turn on various.
 * HPET : Patches out IRQ conflicts.
-* SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system and added AppleMikeyDriver under SMBUS.
+* SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system.
+* Mikey : Added AppleMikeyDriver under SMBUS
 * IRQ Fix : Fixes non-working audio on certain OEM (Dell, HP) machines.
 * RTC : Fix the system clocks found on newer hardware.
 * Fix Mutex with non-zero SyncLevel : Fixes Failed Battery Status and other related issues.
@@ -182,16 +183,16 @@ macOS Ventura
 * Dmac : Adds a DMA Controller to the LPCB (Low Pin Count Bus).
 * Dtgp : Method that passes through calls to _DSM methods on various Device objects.
 * Slpb : Fix sleep power button.
-* Usbx : Supply USB power properties for Skylake and newer, so we will bundle this device in with the EC fix.
-* AlsD : Add Fake Ambient Light Sensor.
+* Als0 : Add Fake Ambient Light Sensor.
 * Pnlf : Fix Brightness Slider.
-* Xosi : Fixing I2C trackpads and Brightness Keyss is enabling them within ACPI.
 * Cpu power management : Fix power management CPU-Frequency.
 * Brightness keys : Fix brightness keyss up and down.
 * Audio patch : Patch layout-id audio in DSDT.
 * USB Patch Native without Kext/Injector.
 * _PLD Buffer/Package : For return a variable length Package of Buffers.
 * Fix ADBG Error.
+* OS Check Fix.
+* Possible operator timeout is ignored patch.
 * Cleanup unused code.
 
 </details>
