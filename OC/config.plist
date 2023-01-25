@@ -118,6 +118,8 @@
 				<data>AAAWWQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Built-In</string>
+				<key>AAPL00,override-no-connect</key>
+				<data>AP///////wAmz34FAAAAAAAbAQSQHxF4Cscwl1xclCgbUFQAAAABAQEBAQEBAQEBAQEBAQEB1RxWplAAIzAoIDwANa4QAAAZERdWplAAIzAoIDwANa4QAAAZAAAA/gBYUEpXR4AxNDBOV1I2AAAAAAAAQSEWABAAAAkBCiAgADg=</data>
 				<key>device-id</key>
 				<data>FlkAAA==</data>
 				<key>device_type</key>
@@ -136,6 +138,8 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 620</string>
 			</dict>
@@ -691,13 +695,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VerbStub.kext</string>
+				<string>IntelBluetoothFirmware.kext</string>
 				<key>Comment</key>
-				<string>VerbStub.kext</string>
+				<string>IntelBluetoothFirmware.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VerbStub</string>
+				<string>Contents/MacOS/IntelBluetoothFirmware</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -709,13 +713,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>IntelBluetoothFirmware.kext</string>
+				<string>VerbStub.kext</string>
 				<key>Comment</key>
-				<string>IntelBluetoothFirmware.kext</string>
+				<string>VerbStub.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IntelBluetoothFirmware</string>
+				<string>Contents/MacOS/VerbStub</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1280,7 +1284,7 @@
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
-			<integer>2000</integer>
+			<integer>3500</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
