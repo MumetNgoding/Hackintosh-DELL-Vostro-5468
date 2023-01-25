@@ -155,6 +155,7 @@ macOS Ventura
 * AppleALC.kext: Enable Audio with layout-id=21
 * BlueToolFixup.kext: Enable bluetooth in Ventura (if you on BigSur you can remove this, because Native on Big Sur)
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
+* IntelBluetoothFirmware.kext : For load Intel Bluetooth Firmware. (See on Hackintool)
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
 * PropertyInjector.kext: Inject Thermal Subsystem
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
@@ -232,6 +233,8 @@ macOS Ventura
 ![23](Screenshot/23.png)
 - New Update Cleanup Unused Code DSDT</br>
 ![24](Screenshot/24.png)
+- New Update load Intel Bluetooth Firmware</br>
+![29](Screenshot/29.png)
 </details>
 
 ## Credit
