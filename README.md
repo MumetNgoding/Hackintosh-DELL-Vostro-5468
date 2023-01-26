@@ -91,9 +91,9 @@ macOS Ventura
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 88` (Patched on DSDT).
+* For ALC256 on this my Machine, I use `layout-id = 12` (Patched on DSDT).
 * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
-* Start from this version, I change to use `ComboJack`. It gives better sound experience and performance when using the headset/headphone.
+* Start from this version, I change to use [`MicFix`](https://github.com/WingLim/MicFix). It gives better sound experience and performance when using the headset/headphone.
 
 </details>
 
@@ -152,7 +152,7 @@ macOS Ventura
 </br>
 
 * AirportItlwm.kext: Intel AC 3165 Wireless
-* AppleALC.kext: Enable Audio with layout-id=88
+* AppleALC.kext: Enable Audio with layout-id=12
 * BlueToolFixup.kext: Enable bluetooth in Ventura (if you on BigSur you can remove this, because Native on Big Sur)
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
 * IntelBluetoothFirmware.kext : For load Intel Bluetooth Firmware. (See on Hackintool)
@@ -227,7 +227,7 @@ macOS Ventura
 ![19](Screenshot/19.png)
 ![20](Screenshot/20.png)
 ![21](Screenshot/21.png)
-- New Update CPU Management</br>
+- New Update CPU Management After One Day Use</br>
 ![22](Screenshot/22.png)
 - New Update USB Port Mapping</br>
 ![23](Screenshot/23.png)
