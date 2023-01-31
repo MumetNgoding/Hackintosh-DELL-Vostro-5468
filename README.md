@@ -191,10 +191,12 @@ macOS Ventura
 * Audio patch : Patch layout-id audio in DSDT.
 * USB Patch Native without Kext/Injector.
 * _PLD Buffer/Package : For return a variable length Package of Buffers.
+* Fix PNOT/PPNT	: Dropping OEM CPU-related SSDTs.
 * Fix ADBG Error.
 * OS Check Fix.
 * Possible operator timeout is ignored patch.
 * Cleanup unused code.
+* Fix Waning and Error code.
 
 </details>
 
