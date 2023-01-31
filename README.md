@@ -235,6 +235,8 @@ macOS Ventura
 ![24](Screenshot/24.png)
 - New Update load Intel Bluetooth Firmware</br>
 ![29](Screenshot/29.png)
+- Now No ACPI Error or Duplicated !!</br>
+![30](Screenshot/30.png)
 </details>
 
 ## Credit

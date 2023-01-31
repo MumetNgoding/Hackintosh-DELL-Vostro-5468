@@ -39,6 +39,20 @@
 				<key>TableSignature</key>
 				<data>RE1BUg==</data>
 			</dict>
+			<dict>
+				<key>All</key>
+				<false/>
+				<key>Comment</key>
+				<string>Block OEM SSDT USB</string>
+				<key>Enabled</key>
+				<true/>
+				<key>OemTableId</key>
+				<data>eGhfT0VNQkQ=</data>
+				<key>TableLength</key>
+				<integer>1716</integer>
+				<key>TableSignature</key>
+				<data>U1NEVA==</data>
+			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
