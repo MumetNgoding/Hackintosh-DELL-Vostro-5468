@@ -253,12 +253,14 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>AAPL,GfxYTile</key>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAbWQ==</data>
+				<data>CQAWWQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Built-In</string>
 				<key>AAPL00,override-no-connect</key>
-				<data>AP///////wAmz34FAAAAAAAbAQSQHxF4Cscwl1xclCgbUFQAAAABAQEBAQEBAQEBAQEBAQEB1RxWplAAIzAoIDwANa4QAAAZERdWplAAIzAoIDwANa4QAAAZAAAA/gBYUEpXR4AxNDBOV1I2AAAAAAAAQSEWABAAAAkBCiAgADg=</data>
+				<data>AP///////wAmz3ycAAAAAAAbAQSQHxFgCm+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEB1RxWplAAIzAoIDwANa4QAAAZERdWplAAIzAoIDwANa4QAAAZAAAA/gBYUEpXR4AxNDBOV1I2AAAAAAAAQSEWABAAAAkBCiAgAKE=</data>
 				<key>device-id</key>
 				<data>FlkAAA==</data>
 				<key>device_type</key>
@@ -952,7 +954,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>blackosx\BsxM1</string>
+			<string>Default</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -1233,7 +1235,7 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseFeatures</key>
-			<true/>
+			<false/>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
@@ -1243,7 +1245,7 @@
 			<key>ROM</key>
 			<data>vEq14z2u</data>
 			<key>SpoofVendor</key>
-			<false/>
+			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
