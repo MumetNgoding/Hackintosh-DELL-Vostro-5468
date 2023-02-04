@@ -234,21 +234,23 @@
 				<key>AAPL,GfxYTile</key>
 				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>CQAWWQ==</data>
+				<data>AAAbWQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Built-In</string>
-				<key>AAPL00,override-no-connect</key>
-				<data>AP///////wAmz3ycAAAAAAAbAQSQHxFgCm+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEB1RxWplAAIzAoIDwANa4QAAAZERdWplAAIzAoIDwANa4QAAAZAAAA/gBYUEpXR4AxNDBOV1I2AAAAAAAAQSEWABAAAAkBCiAgAKE=</data>
 				<key>device-id</key>
 				<data>FlkAAA==</data>
 				<key>device_type</key>
 				<string>Display controller</string>
+				<key>framebuffer-con0-alldata</key>
+				<data>AAAIAAIAAACYAAAA</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
 				<data>AQUJAAAIAACHAQAA</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>AgQKAAAIAACHAQAA</data>
+				<data>AgQKAAAEAACHAQAA</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-fbmem</key>
@@ -953,6 +955,8 @@
 			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>HibernateSkipsPicker</key>
+			<true/>
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>LauncherOption</key>
@@ -970,7 +974,7 @@
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
-			<string>Never</string>
+			<false/>
 			<key>SkipCustomEntryCheck</key>
 			<true/>
 			<key>TakeoffDelay</key>
