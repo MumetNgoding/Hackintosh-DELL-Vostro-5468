@@ -3,14 +3,14 @@
 ![macOs Ventura](Screenshot/1.png)
 
 <p align = "center">
-macOS Ventura
+macOS Ventura 13.2
 </p>
 
 * macOS:
-  - macOS Ventura ✅
+  - macOS Ventura 13.2 ✅
 * Windows:
   - Windows 11 ✅
-* Bootloader: OpenCore 0.8.8
+* Bootloader: OpenCore MOD 0.8.9
 * EFI can be used for both for installation and booting from SSD.
 
 ## Introduction
@@ -157,7 +157,7 @@ macOS Ventura
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
 * IntelBluetoothFirmware.kext : For load Intel Bluetooth Firmware. (See on Hackintool)
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
-* PropertyInjector.kext: Inject Thermal Subsystem
+* PropertyInjector.kext and ThermalSolution.kext: Inject Thermal Subsystem
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * VoodooI2C and VoodooI2CHID: Fix Trackpad, pair with extension VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
@@ -197,6 +197,10 @@ macOS Ventura
 * Possible operator timeout is ignored patch.
 * Cleanup unused code.
 * Fix Waning and Error code.
+* USBX.
+* B0D4.
+* HDAU.
+* XSPI.
 
 </details>
 
@@ -239,6 +243,13 @@ macOS Ventura
 ![29](Screenshot/29.png)
 - Now No ACPI Error or Duplicated !!</br>
 ![30](Screenshot/30.png)
+- New Update CPU Management Idle !!</br>
+![31](Screenshot/31.png)
+- Geekbench5 Benchmark</br>
+![32](Screenshot/32.png)
+![33](Screenshot/33.png)
+- Clean Warning on DSDT Patch</br>
+![34](Screenshot/34.png)
 </details>
 
 ## Credit
