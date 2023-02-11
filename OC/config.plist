@@ -32,11 +32,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>ssdt_data.aml</string>
+				<string>SSDT-DATA.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>ssdt_data.aml</string>
+				<string>SSDT-DATA.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -427,17 +427,13 @@
 				<string>Built-In</string>
 				<key>device_type</key>
 				<string>Display controller</string>
-				<key>framebuffer-con0-alldata</key>
-				<data>AAAIAAIAAACYAAAA</data>
-				<key>framebuffer-con0-enable</key>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQUKAAAIAACHAQAA</data>
+				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>AgQKAAAIAACHAQAA</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con3-alldata</key>
 				<data>AwYKAAAEAACHAQAA</data>
-				<key>framebuffer-con3-enable</key>
+				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
