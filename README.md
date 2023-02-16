@@ -3,15 +3,16 @@
 ![macOs Ventura](Screenshot/1.png)
 
 <p align = "center">
-macOS Ventura 13.2
+macOS Ventura 13.2.1
 </p>
 
 * macOS:
-  - macOS Ventura 13.2 ✅
+  - macOS Ventura 13.2.1 ✅
 * Windows:
   - Windows 11 ✅
 * Bootloader: OpenCore MOD 0.8.9
 * EFI can be used for both for installation and booting from SSD.
+* BIOS Version 1.20.0 (Latest Version)
 
 ## Introduction
 
@@ -163,7 +164,6 @@ macOS Ventura 13.2
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
 * VoodooPS2Controller.kext: Enable Keyboard and Touchpad
 * WhateverGreen.kext: Lilu plugin providing patches to select GPUs on macOS
-<!-- * VerbStub.kext: for Handle ComboJack ( Headphone Fix ) -->
 
 </details>
 
@@ -175,32 +175,31 @@ macOS Ventura 13.2
 * HPET : Patches out IRQ conflicts.
 * SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system.
 * Mikey : Added AppleMikeyDriver under SMBUS
-* IRQ Fix : Fixes non-working audio on certain OEM (Dell, HP) machines.
+* IRQ : Fixes non-working audio on certain OEM (Dell, HP) machines.
 * RTC : Fix the system clocks found on newer hardware.
-* Fix Mutex with non-zero SyncLevel : Fixes Failed Battery Status and other related issues.
+* Mutex with non-zero SyncLevel : Fixes Failed Battery Status and other related issues.
 * Add MCHC : Adds missing MCHC Device.
 * Patch USB_7/8 series : Injects Power Properties for USB.
 * Sb_prw_0x6d (instant wake) : To fix the sleep/wake function.
-* Dmac : Adds a DMA Controller to the LPCB (Low Pin Count Bus).
-* Dtgp : Method that passes through calls to _DSM methods on various Device objects.
-* Slpb : Fix sleep power button.
 * Als0 : Add Fake Ambient Light Sensor.
 * Pnlf : Fix Brightness Slider.
-* Cpu power management : Fix power management CPU-Frequency.
+* Cpu power management : Fix power management CPU-Frequency (SSDT-DATA) compare with CPUFriend.kext.
 * Brightness keys : Fix brightness keyss up and down.
 * Audio patch : Patch layout-id audio in DSDT.
+* Dmac : Adds a DMA Controller to the LPCB (Low Pin Count Bus).
+* Dtgp : Method that passes through calls to _DSM methods on various Device objects.
+* AppleVTD : Enable Intel Virtualization.
+* AC : Load AppleACPIAdapter.
+* MEM2 : Expanded Memory Option provides essentially unlimited logging capacity.
 * USB Patch Native without Kext/Injector.
 * _PLD Buffer/Package : For return a variable length Package of Buffers.
-* Fix PNOT/PPNT	: Dropping OEM CPU-related SSDTs.
 * Fix ADBG Error.
-* OS Check Fix.
-* Possible operator timeout is ignored patch.
+* OS Check Patch.
+* GPI0 Patch.
+* B0D4 Patch.
+* USBX Patch.
 * Cleanup unused code.
 * Fix Waning and Error code.
-* USBX.
-* B0D4.
-* HDAU.
-* XSPI.
 
 </details>
 
@@ -250,6 +249,8 @@ macOS Ventura 13.2
 ![33](Screenshot/33.png)
 - Clean Warning on DSDT Patch</br>
 ![34](Screenshot/34.png)
+- New Disk Benchmark
+![35](Screenshot/35.png)
 </details>
 
 ## Credit
