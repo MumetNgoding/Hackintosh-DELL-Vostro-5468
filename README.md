@@ -10,7 +10,7 @@ macOS Ventura 13.2.1
   - macOS Ventura 13.2.1 ✅
 * Windows:
   - Windows 11 ✅
-* Bootloader: OpenCore MOD 0.8.9
+* Bootloader: OpenCore MOD 0.9.0
 * EFI can be used for both for installation and booting from SSD.
 * BIOS Version 1.20.0 (Latest Version)
 
@@ -29,7 +29,7 @@ macOS Ventura 13.2.1
 | SSD1 | Digital Alliance 128GB M.2 SATA III |
 | HDD2 | Western Digital WD5000LPCX 500GB SATA Hard Drive |
 | Sound | Realtek ALC256 |
-| Wireless, Bluetooth | Intel 3165 |
+| Wireless, Bluetooth | Intel AC 3165 |
 | Integrated GPU | Intel HD Graphics 620 |
 
 </details>
@@ -44,6 +44,8 @@ macOS Ventura 13.2.1
 | Sleep/Wake | ✅ Working |
 | Intel HD620 Graphics Acceleration | ✅ Working |
 | Intel Quartz Extreme and Intel Core Image (QE/CI) | ✅ Working |
+| Intel Accelerator | ✅ Working |
+| Intel VT-d | ✅ Working |
 | Brightness control slider | ✅ Working |
 | Special function keys (audio, brightness...) | ✅ Working |
 | Ethernet | ✅ Working |
@@ -82,6 +84,8 @@ macOS Ventura 13.2.1
   | Enable External USB Port | `Enabled` | |
   | Secure Boot | `Disabled` | Can set to `Enabled` if you have already custom secure boot keys and signed OpenCore binaries |
   | Wake on USB | `Enabled` | Wake from keyboard works correctly | |
+  | Wake on LAN | `Disable` | Disable Wake from LAN | |
+  | Intel VT-d | `Enable` | Load AppleVTD | |
 
 </details>
 
@@ -111,7 +115,15 @@ macOS Ventura 13.2.1
  - `sudo pmset standby 0`
  - `sudo pmset tcpkeepalive 0`
  - `sudo pmset lidwake 0`
-* NOTE: please use powernap 0 to fix itlwm try reconnect many times.
+ 
+* My Config pmset used :
+ - `sudo pmset -a standby 0`
+ - `sudo pmset -a autopoweroff 0`
+ - `sudo pmset -a hibernatemode 0`
+ - `sudo pmset ttyskeepawake 0`
+ - `sudo pmset powernap 0`
+ - `sudo rm -r /var/vm/sleepimage`
+ - `sudo mkdir /var/vm/sleepimage`
 
 ### Keyboard, Trackpad and Magic Trackpad
 - Look up & data detectors
@@ -191,8 +203,8 @@ macOS Ventura 13.2.1
 * AppleVTD : Enable Intel Virtualization.
 * AC : Load AppleACPIAdapter.
 * MEM2 : Expanded Memory Option provides essentially unlimited logging capacity.
-* USB Patch Native without Kext/Injector.
 * _PLD Buffer/Package : For return a variable length Package of Buffers.
+* USB Patch Native without Kext/Injector.
 * Fix ADBG Error.
 * OS Check Patch.
 * GPI0 Patch.

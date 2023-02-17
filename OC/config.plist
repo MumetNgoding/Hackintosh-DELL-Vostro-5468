@@ -880,9 +880,9 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HibernateSkipsPicker</key>
-			<true/>
-			<key>HideAuxiliary</key>
 			<false/>
+			<key>HideAuxiliary</key>
+			<true/>
 			<key>LauncherOption</key>
 			<string>Full</string>
 			<key>LauncherPath</key>
@@ -898,13 +898,13 @@
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>SkipCustomEntryCheck</key>
 			<true/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1101,7 +1101,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>igfxonln=1 alcverbs=1 npci=0x2000 -v</string>
+				<string>igfxonln=1 alcverbs=1 npci=0x2000</string>
 				<key>csr-active-config</key>
 				<data>/w8AAA==</data>
 				<key>prev-lang:kbd</key>
