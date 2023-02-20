@@ -96,7 +96,7 @@ macOS Ventura 13.2.1
 * Integrated Intel HD Graphics 620 support is handled by WhateverGreen, and configured in the `DeviceProperties` section of `config.plist`.
 
 ### Audio
-* For ALC256 on this my Machine, I use `layout-id = 12` (Patched on DSDT).
+* For ALC256 on this my Machine, I use `layout-id = 12`.
 * Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises.
 * Start from this version, I change to use [`MicFix`](https://github.com/WingLim/MicFix). It gives better sound experience and performance when using the headset/headphone.
 
@@ -116,7 +116,7 @@ macOS Ventura 13.2.1
  - `sudo pmset tcpkeepalive 0`
  - `sudo pmset lidwake 0`
  
-* My Config pmset used :
+* My Config pmset used ( Optional ) :
  - `sudo pmset -a standby 0`
  - `sudo pmset -a autopoweroff 0`
  - `sudo pmset -a hibernatemode 0`
@@ -170,7 +170,6 @@ macOS Ventura 13.2.1
 * CPUFriend.kext : For handle cpu-frequency data providing patch CPU-Frequency_data from CPUFriend
 * IntelBluetoothFirmware.kext : For load Intel Bluetooth Firmware. (See on Hackintool)
 * Lilu.kext: Kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS
-* PropertyInjector.kext and ThermalSolution.kext: Inject Thermal Subsystem
 * RealtekRTL8111.kext: Driver Ethernet for the Realtek RTL8111/8168 family
 * VoodooI2C and VoodooI2CHID: Fix Trackpad, pair with extension VoodooI2CHID.kext
 * VirtualSMC.kext: Advanced Apple SMC emulator in the kernel
@@ -184,31 +183,19 @@ macOS Ventura 13.2.1
 </br>
 
 * Fix _WAK Arg0 v2 : For wake from sleep to turn on various.
-* HPET : Patches out IRQ conflicts.
 * SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system.
-* Mikey : Added AppleMikeyDriver under SMBUS
-* IRQ : Fixes non-working audio on certain OEM (Dell, HP) machines.
-* RTC : Fix the system clocks found on newer hardware.
-* Mutex with non-zero SyncLevel : Fixes Failed Battery Status and other related issues.
-* Add MCHC : Adds missing MCHC Device.
-* Patch USB_7/8 series : Injects Power Properties for USB.
-* Sb_prw_0x6d (instant wake) : To fix the sleep/wake function.
-* Als0 : Add Fake Ambient Light Sensor.
+* Add MCHC : Add missing MCHC Device.
+* AlsD : Enable Ambient Light Sensor.
 * Pnlf : Fix Brightness Slider.
 * Cpu power management : Fix power management CPU-Frequency (SSDT-DATA) compare with CPUFriend.kext.
 * Brightness keys : Fix brightness keyss up and down.
-* Audio patch : Patch layout-id audio in DSDT.
 * Dmac : Adds a DMA Controller to the LPCB (Low Pin Count Bus).
 * Dtgp : Method that passes through calls to _DSM methods on various Device objects.
-* AppleVTD : Enable Intel Virtualization.
-* AC : Load AppleACPIAdapter.
-* MEM2 : Expanded Memory Option provides essentially unlimited logging capacity.
-* _PLD Buffer/Package : For return a variable length Package of Buffers.
+* ADP1 : Enable Load AppleACPIAdapter.
 * USB Patch Native without Kext/Injector.
-* Fix ADBG Error.
 * OS Check Patch.
-* GPI0 Patch.
-* B0D4 Patch.
+* EC Fix.
+* PMCR Fix.
 * USBX Patch.
 * Cleanup unused code.
 * Fix Waning and Error code.
