@@ -31,7 +31,7 @@
 				<key>Comment</key>
 				<string>Block OEM SSDT USB</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>OemTableId</key>
 				<data>eGhfT0VNQkQ=</data>
 				<key>TableLength</key>
@@ -82,7 +82,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>U0FUMA==</data>
 				<key>Limit</key>
@@ -112,7 +112,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>SERBUw==</data>
 				<key>Limit</key>
@@ -129,6 +129,36 @@
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>321</integer>
+				<key>TableSignature</key>
+				<data>U1NEVA==</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>Rename _UPC to XUPC (USB Name)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1VQQw==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>eGhfT0VNQkQ=</data>
+				<key>Replace</key>
+				<data>WFVQQw==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>1716</integer>
 				<key>TableSignature</key>
 				<data>U1NEVA==</data>
 			</dict>

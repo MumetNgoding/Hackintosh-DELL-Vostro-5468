@@ -182,21 +182,24 @@ macOS Ventura 13.2.1
 <summary><strong>DSDT Patch Docs</strong></summary>
 </br>
 
-* Fix _WAK Arg0 v2 : For wake from sleep to turn on various.
 * SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system.
 * Add MCHC : Add missing MCHC Device.
-* AlsD : Enable Ambient Light Sensor.
+* Als0 : Enable Ambient Light Sensor.
 * Pnlf : Fix Brightness Slider.
 * Cpu power management : Fix power management CPU-Frequency (SSDT-DATA) compare with CPUFriend.kext.
 * Brightness keys : Fix brightness keyss up and down.
+* SLPB/PWRB : Enable Sleep Button Device.
 * Dmac : Adds a DMA Controller to the LPCB (Low Pin Count Bus).
 * Dtgp : Method that passes through calls to _DSM methods on various Device objects.
 * ADP1 : Enable Load AppleACPIAdapter.
-* USB Patch Native without Kext/Injector.
-* OS Check Patch.
+* MEM2 : Is relevant for Intel iGPUs in Laptops only, it makes the iGPU use MEM2 instead of TPMX.
+* USB Patch Native without Kext/Injector. 
+* OS Check Fix.
 * EC Fix.
-* PMCR Fix.
+* RTC-TIMR-HPET Fix.
+* PPMC Fix.
 * USBX Patch.
+* B0D4 Fix.
 * Cleanup unused code.
 * Fix Waning and Error code.
 
