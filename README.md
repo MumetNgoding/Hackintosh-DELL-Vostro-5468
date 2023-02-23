@@ -182,25 +182,24 @@ macOS Ventura 13.2.1
 <summary><strong>DSDT Patch Docs</strong></summary>
 </br>
 
-* SMBUS : Adds missing SMBUS (Intel System Management Bus) device to the system.
-* Add MCHC : Add missing MCHC Device.
-* Als0 : Enable Ambient Light Sensor.
-* Pnlf : Fix Brightness Slider.
-* Cpu power management : Fix power management CPU-Frequency (SSDT-DATA) compare with CPUFriend.kext.
-* Brightness keys : Fix brightness keyss up and down.
-* SLPB/PWRB : Enable Sleep Button Device.
-* Dmac : Adds a DMA Controller to the LPCB (Low Pin Count Bus).
-* Dtgp : Method that passes through calls to _DSM methods on various Device objects.
-* ADP1 : Enable Load AppleACPIAdapter.
-* MEM2 : Is relevant for Intel iGPUs in Laptops only, it makes the iGPU use MEM2 instead of TPMX.
-* USB Patch Native without Kext/Injector. 
-* OS Check Fix.
-* EC Fix.
-* RTC-TIMR-HPET Fix.
-* PPMC Fix.
-* USBX Patch.
-* B0D4 Fix.
-* Cleanup unused code.
+- `Fixed From OEM DSDT :`
+* HPET : Fix Patches out IRQ conflicts.
+* RTC : Fix the system clocks found on newer hardware.
+* TIMR : Fix defines the Device object for the system timer device.
+* PPMC : Fix managing the power states of various components within a computer system.
+* SMBUS : Fix missing SMBUS (Intel System Management Bus) device to the system.
+* OS-Check : Fix system_OSYS win10 patch.
+* BRT6 : Fix Brightness Keys.
+
+- `Specifics Patch Device :`
+* DMAC : Add a DMA Controller to the LPCB (Low Pin Count Bus).
+* PMCR : Add which corresponds to the Platform Management Control Register (PMCR).
+* USBX : Add the purpose of these properties is to define the current limits for USB sleep and wake ports associated with this device.
+* PNLF : Add Brightness Slider.
+* DTGP : Method that passes through calls to _DSM methods on various Device objects.
+* MCHC : Add missing MCHC Device.
+* MEM2 : Add relevant for Intel iGPUs in Laptops only, it makes the iGPU use MEM2 instead of TPMX.
+* USB Patch Native without Kext/Injector.
 * Fix Waning and Error code.
 
 </details>
