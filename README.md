@@ -187,9 +187,11 @@ macOS Ventura 13.2.1
 * RTC : Fix the system clocks found on newer hardware.
 * TIMR : Fix defines the Device object for the system timer device.
 * PPMC : Fix managing the power states of various components within a computer system.
-* SMBUS : Fix missing SMBUS (Intel System Management Bus) device to the system.
+* SMBUS-Mikey : Fix missing SMBUS (Intel System Management Bus) device to the system and Load AppleMikeyDriver.
 * OS-Check : Fix system_OSYS win10 patch.
 * BRT6 : Fix Brightness Keys.
+* ADP1 : Fix Load AppleACPIAdapter.
+* ALS0 : Fix Ambient Light Sensor.
 
 - `Specifics Patch Device :`
 * DMAC : Add a DMA Controller to the LPCB (Low Pin Count Bus).
@@ -199,8 +201,11 @@ macOS Ventura 13.2.1
 * DTGP : Method that passes through calls to _DSM methods on various Device objects.
 * MCHC : Add missing MCHC Device.
 * MEM2 : Add relevant for Intel iGPUs in Laptops only, it makes the iGPU use MEM2 instead of TPMX.
+* Sb_prw_0x6d (instant wake) : Add patch _prw for fix the sleep/wake function.
 * USB Patch Native without Kext/Injector.
 * Fix Waning and Error code.
+
+- `SSDT-Data : Fix correct CPU Frequency_Data, paired with CPUFriend.kext.`
 
 </details>
 
