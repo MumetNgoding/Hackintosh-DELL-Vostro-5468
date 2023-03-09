@@ -265,6 +265,8 @@
 				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 620</string>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
 			<dict>
