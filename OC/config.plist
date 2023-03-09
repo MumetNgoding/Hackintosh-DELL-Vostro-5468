@@ -243,10 +243,12 @@
 				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAWWQ==</data>
-				<key>AAPL,slot-name</key>
+				<key>#AAPL,slot-name</key>
 				<string>Built-In</string>
 				<key>device_type</key>
 				<string>Display controller</string>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
 				<data>AQUKAAAIAACHAQAA</data>
 				<key>framebuffer-con1-enable</key>
@@ -265,8 +267,6 @@
 				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 620</string>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
 			<dict>
